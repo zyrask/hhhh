@@ -1,0 +1,54 @@
+So, I’m lowkey trying to build a website for my portfolio. I go by codexyn, and I mainly code Discord bots using Python and Node.js. Outside of that, I’ve got medium knowledge of Luau and some experience working in Roblox Studio.
+
+For the website, I want the UI to feel really smooth and modern — something clean and minimal but still with personality. I’m thinking mostly black or super dark backgrounds to keep it chill, with red accents for buttons, links, or highlights to give it some energy. The layout should be easy to navigate, with sections that flow nicely so visitors don’t get overwhelmed.
+
+I want subtle animations — nothing crazy, maybe gentle hover effects on buttons or smooth transitions between pages — just enough to make it feel alive but not distracting. The background should be visually interesting but not loud, like a soft gradient or a subtle pattern that fits the dark/red vibe.
+
+At the top, I want a fixed topbar that stays visible as you scroll. It should have my logo or alias on the left, and navigation links on the right — stuff like Home, Projects, About, Contact. The topbar should match the dark theme with the red accent on hover or active states.
+
+Right now, I’ve got 4 ongoing projects:
+
+Broadcast Error — a game my friend and I are currently developing together.
+
+Light Yagami — a Discord bot I coded solo as a skills test; it’s a moderation bot with fun and game features.
+
+Luckigi — another Discord bot focused on fake gambling, kind of like Dank Memer.
+
+Sentinel — a bot for ticketing and welcoming users.
+
+My logo is https://i.ibb.co/XfLLCNmk/download-4.jpg
+
+Contact Section:
+Include my contact info clearly —
+Roblox: SUSPECTPLOT
+Discord: codexyn
+Email: zyraskk@gmail.com
+
+UI & Animations:
+I want smooth, subtle animations throughout the site and a really cool, modern UI vibe.
+
+Footer:
+At the bottom, add a small line like:
+“Obviously made with love by the man, codexyn.”
+
+Secret Code Feature:
+Add a hidden input listener on the site for the code 9017598429 — no visible input box, but the site listens for that sequence typed anywhere. When entered, it unlocks a special “Progress Tracker” section for Broadcast Error. This section will allow me to add photos and update text dynamically about the game’s progress.
+
+Broadcast Error Info & Links:
+Include a dedicated section with info about Broadcast Error, and link to the Discord here:
+https://discord.gg/c9MfbBAkfH
+
+Roblox Profile:
+Link to my Roblox profile:
+https://www.roblox.com/users/648417667/profile
+
+Additional ideas you might consider adding:
+
+Maybe add a subtle notification or visual cue when the secret code is entered, so you know it’s activated.
+
+For the progress tracker, consider a simple admin panel or easy CMS to update photos and text without needing to dive into code.
+what i ment about the progress tracker
+its not hidden, but like putting the secret code allows me to edit it and then the files change and automatically save it
+and the progress tracker for broadcast error is public, just putting in the code allows me to edit text and add images
+an u make like every background midnight black not like random blacks and gray
+After, make it ready for deploy for Vercel

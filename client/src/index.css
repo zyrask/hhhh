@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(0, 0%, 0%);
+  --muted-foreground: hsl(0, 0%, 64.9%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(0, 0%, 0%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 15.9%);
+  --input: hsl(0, 0%, 15.9%);
+  --primary: hsl(0, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 0%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(0, 100%, 50%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 100%, 50%);
+  --radius: 0.5rem;
+  --midnight: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 0%);
+  --accent-red: hsl(0, 100%, 50%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(0, 0%, 0%);
+  --muted-foreground: hsl(0, 0%, 64.9%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(0, 0%, 0%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 15.9%);
+  --input: hsl(0, 0%, 15.9%);
+  --primary: hsl(0, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 0%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(0, 100%, 50%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 100%, 50%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-midnight antialiased text-foreground overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .midnight {
+    background-color: var(--midnight);
+  }
+  
+  .dark-gray {
+    background-color: var(--dark-gray);
+  }
+  
+  .accent-red {
+    color: var(--accent-red);
+  }
+  
+  .bg-accent-red {
+    background-color: var(--accent-red);
+  }
+  
+  .border-accent-red {
+    border-color: var(--accent-red);
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #ffffff, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .floating-nav {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .project-card {
+    transition: all 0.3s ease;
+    background: linear-gradient(145deg, #111111, #000000);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
+  }
+  
+  .edit-mode {
+    border: 2px dashed #ff0000 !important;
+    position: relative;
+  }
+  
+  .edit-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff0000;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 0 0 0 8px;
+    z-index: 10;
+  }
+  
+  .secret-notification {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: #ff0000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+  }
+  
+  .secret-notification.show {
+    transform: translateX(0);
+  }
+  
+  .typing-indicator {
+    border-right: 2px solid #ff0000;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% { border-color: #ff0000; }
+    51%, 100% { border-color: transparent; }
+  }
+}
